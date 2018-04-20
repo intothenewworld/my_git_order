@@ -1,0 +1,59 @@
+﻿# ENTAC
+# 验证用户名
+# 版本控制：
+一般流程：
+第一步：
+git clone /path/to/repository(路径) 克隆一个本地的仓库
+下面是克隆一个 github（远端服务器）上的仓库
+git clone https://github.com/intothenewworld/myPythonCode.git
+第二步：
+git checkout -b + 分支名   建立一个新的分支
+
+第三步：
+用vim编辑器随便编写你想写的内容
+vim readme.py  (里面只写了一个print('hello, world))
+如果要上传图片你可以直接在把图片放到你从远端克隆到本地的
+厂库的文件夹目录下
+
+
+第四步：
+git add <filename> 提交具体的文件到缓存区
+git add * 把你克隆目录下所有的东西都提交到缓存区
+
+第五步：
+git commit -m "代码提交信息"（后面的代码提交信息不可省略）
+这一步只是把你的改动提交到HEAD，但是还没到你的远端仓库。
+
+第六步：
+git push origin + master
+这就把你的提交到了远端仓库
+这里的master可以换成你想要推送的任何分支
+
+注意：如果你没有克隆现有的仓库，并欲将你的仓库连接到某个远程
+服务器，你可以使用如下命令添加：
+ git remote add origin 网址      给远端仓库建立联系
+如此你就能将你的改动推送到所添加的服务器上去了。
+
+
+# 1.Subversion  必须有中央服务器
+# 2.Git         可以先在本地同步
+# git --version                   确认是否安装Git
+# git init                        加入版本控制
+# git add.                        添加
+# git status                      查看状态
+# git commit -m '项目的初始版本'  提交并写原因
+# git log                         查看日志
+# git reset HEAD^                 回到上一版本
+# git reset 版本号                回到对应版本号的版本
+# git remote add origin 网址      给远端仓库建立联系
+# git pull 网址                   与服务器上代码同步
+# git push origin master          往服务器上传代码
+# git clone 网址                  下载项目
+# git rm 文件名                   删除文件
+# git check out 文件名            重新拿出文件
+# git branch                      查看分支
+# git branch 名称                 建立分支
+# git checkout 名称               切换至该名称的分支
+# git merge 分支名称              合并分支到主线
+# git branch -D                   删除分支
+# git checkout -b 分支名          创建分支
